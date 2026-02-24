@@ -186,7 +186,11 @@ export default function AppDownloadSection() {
                 disabled
                 className="group flex items-center gap-4 px-6 py-3 bg-white border border-emerald-100 rounded-2xl shadow-sm opacity-70 cursor-not-allowed"
               >
-                <Apple size={36} className="text-emerald-900" />
+                    <img
+                      src="/icons/apple.png"
+                      alt="Apple Icon"
+                      className="w-9 h-9 object-contain"
+                    />
                 <div className="text-left text-emerald-900">
                   <div className="text-[11px] opacity-60 uppercase tracking-wide text-emerald-900">App Store</div>
                   <div className="text-[19px] font-semibold leading-tight flex items-center gap-2 text-emerald-900">
@@ -219,13 +223,9 @@ export default function AppDownloadSection() {
               <div>Join us now and get notified at launch</div>
             </div>
           </div>
-
-          {/* Enhanced Visual Side - Interactive 3D Phone */}
           <div className="relative h-[600px] flex items-center justify-center">
-            {/* Enhanced Phone Back Glow */}
             <div className="absolute inset-0 bg-gradient-to-tr from-[#10B981] via-[#059669] to-[#10B981] opacity-40 blur-[100px] rounded-full animate-breathe" />
 
-            {/* Enhanced floating particles with better animations */}
             <div className="absolute inset-0 pointer-events-none">
               {[
                 {
@@ -285,16 +285,12 @@ export default function AppDownloadSection() {
                     : '0 30px 60px -12px rgba(0, 0, 0, 0.25)',
                 }}
               >
-                {/* Enhanced Notch with animation */}
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-36 h-8 bg-black rounded-b-3xl z-20">
                   <div className="absolute top-1 left-1/2 -translate-x-1/2 w-16 h-1 bg-gray-800 rounded-full" />
                 </div>
 
-                {/* Screen Content with enhanced animations */}
                 <div className="w-full h-full bg-white flex flex-col relative overflow-hidden">
-                  {/* Enhanced Header with dynamic shine and gradient */}
                   <div className="relative bg-gradient-to-br from-[#10B981] to-[#059669] p-6 pt-14 text-white overflow-hidden">
-                    {/* Animated background patterns */}
                     <div className="absolute inset-0 opacity-20">
                       <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.4),transparent_50%)] animate-gradientShift" />
                       <div
@@ -323,17 +319,13 @@ export default function AppDownloadSection() {
                       {formatter.format(balance)}
                     </h2>
 
-                    {/* Enhanced shine sweep with multiple layers */}
                     <div className="pointer-events-none absolute -inset-y-6 -left-60 w-60 rotate-12 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-shine-slow" />
                     <div
                       className="pointer-events-none absolute -inset-y-6 -left-40 w-40 rotate-12 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shine-slow"
                       style={{ animationDelay: '0.5s' }}
                     />
                   </div>
-
-                  {/* Enhanced Body */}
                   <div className="flex-1 bg-[#F5F5F7] p-4 space-y-4 relative overflow-hidden">
-                    {/* Enhanced Action Row */}
                     <div className="flex gap-4 mb-6">
                       {[
                         {

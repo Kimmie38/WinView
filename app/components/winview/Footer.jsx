@@ -1,10 +1,10 @@
 import { Mail, MapPin, Phone } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
     <footer className="relative overflow-hidden border-t border-green-200/30 dark:border-green-700/30 bg-gradient-to-b from-green-100/60 via-white to-white dark:from-green-900/40 dark:via-neutral-800 dark:to-neutral-800 transition-colors duration-300">
-      
-      {/* Soft Green Ambient Light */}
+
       <div className="absolute inset-0 bg-gradient-to-t from-green-400/5 via-transparent to-transparent pointer-events-none" />
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-green-300/10 blur-3xl rounded-full" />
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-emerald-300/10 blur-3xl rounded-full" />
@@ -12,26 +12,31 @@ export default function Footer() {
       <div className="w-full px-6 py-16 mx-auto relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           
-          {/* Brand */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-20 h-20 rounded-xl overflow-hidden shadow-sm ring-1 ring-green-200/30 dark:ring-green-700/30">
-                <img
-                  src="https://ucarecdn.com/a074ace0-7537-49fc-8fc2-efaa47ded78a/-/crop/512x512/center/-/quality/smart/-/format/auto/"
-                  srcSet="https://ucarecdn.com/a074ace0-7537-49fc-8fc2-efaa47ded78a/-/crop/512x512/center/-/quality/smart/-/format/auto/ 1x, https://ucarecdn.com/a074ace0-7537-49fc-8fc2-efaa47ded78a/-/crop/1024x1024/center/-/quality/smart/-/format/auto/ 2x"
-                  sizes="80px"
-                  alt="Winview Microfinance Bank Limited Logo"
-                  className="w-full h-full object-cover"
-                  decoding="async"
-                  loading="lazy"
-                />
-              </div>
-              <div className="flex flex-col">
-                <span className="font-black text-2xl text-neutral-900 dark:text-white leading-tight tracking-tight">
+           <div className="relative flex items-center -translate-y-20 -translate-x-16">
+              <Image
+                src="/logo-t.png"
+                alt="Winview Logo"
+                width={600}
+                height={600}
+                className="w-60 lg:w-72 h-auto object-contain shrink-0"
+                priority
+              />
+              <div className="flex flex-col leading-[0.95] -ml-20">
+                <span className="font-black text-2xl lg:text-3xl text-neutral-900 dark:text-white tracking-tight">
                   Winview
                 </span>
-                <span className="text-xs font-bold text-green-600 dark:text-green-400 uppercase tracking-widest">
+                <span
+                  className="text-xs font-bold uppercase tracking-widest text-green-600 dark:text-green-400 whitespace-nowrap"
+                  style={{ letterSpacing: "0.18em" }}
+                >
                   Microfinance Bank
+                </span>
+                <span
+                  className="-mt-1 text-xs font-bold uppercase tracking-widest text-green-600 dark:text-green-400 whitespace-nowrap"
+                  style={{ letterSpacing: "0.18em" }}
+                >
+                  Limited
                 </span>
               </div>
             </div>

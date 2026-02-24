@@ -50,33 +50,31 @@ export default function Header() {
       >
         <nav className="w-full px-3 lg:px-6">
           <div className="flex items-center justify-between h-20 lg:h-28">
-            <div className="flex items-center gap-3 group">
-              <a href="/" className="flex items-center gap-2 transition-all duration-300">
-                <div className="relative">
-                 <div className="w-[58px] h-[58px] lg:w-[68px] lg:h-[68px] rounded-xl overflow-hidden shadow-sm">
+           <div className="flex items-center">
+              <a href="/" className="flex items-center">
+                <div className="flex items-center">
                   <Image
-                    src="/2.png"
+                    src="/logo-t.png"
                     alt="Winview Logo"
-                    width={120}
-                    height={40}
-                    className="object-cover"
+                    width={300}
+                    height={300}
+                    className="w-66 lg:w-70 h-auto object-contain"
+                    priority
                   />
                 </div>
-                </div>
-
-                <div className="flex flex-col leading-tight">
-                  <span className="text-xl lg:text-2xl font-black text-gray-800 tracking-tight">
+                <div className="flex flex-col leading-[0.95] -ml-24">
+                  <span className="text-2xl lg:text-3xl font-black text-gray-800 tracking-tight">
                     Winview
                   </span>
                   <span
                     className="text-[11px] sm:text-xs font-bold uppercase tracking-widest text-gray-800 whitespace-nowrap"
-                    style={{ letterSpacing: '0.18em' }}
+                    style={{ letterSpacing: "0.18em" }}
                   >
                     Microfinance Bank
                   </span>
                   <span
-                    className="-mt-0.5 text-[11px] sm:text-xs font-bold uppercase tracking-widest text-gray-800 whitespace-nowrap"
-                    style={{ letterSpacing: '0.18em' }}
+                    className="-mt-1 text-[11px] sm:text-xs font-bold uppercase tracking-widest text-gray-800 whitespace-nowrap"
+                    style={{ letterSpacing: "0.18em" }}
                   >
                     Limited
                   </span>
