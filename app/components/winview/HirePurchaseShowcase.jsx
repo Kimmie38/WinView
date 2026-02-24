@@ -103,7 +103,7 @@ export default function HirePurchaseShowcase() {
   };
 
   return (
-    <section ref={sectionRef} className="relative px-6 pt-20 pb-16 bg-[#FAF7F2]">
+    <section ref={sectionRef} className="relative px-6 pt-20 pb-16 bg-[#effcf3]">
       <div className="pointer-events-none absolute -top-24 -left-10 w-[520px] h-[520px] bg-gradient-to-br from-[#007AFF]/8 to-[#5AC8FA]/8 rounded-full blur-[80px] animate-breathe" />
       <div
         className="pointer-events-none absolute -bottom-28 -right-16 w-[560px] h-[560px] bg-gradient-to-tl from-[#FFB86C]/8 to-[#FFD1A6]/8 rounded-full blur-[80px] animate-breathe"

@@ -37,7 +37,7 @@ export default function FAQSection() {
   ];
 
   return (
-    <section className="py-32 px-6 bg-[#FAF7F2] relative overflow-hidden">
+    <section className="py-32 px-6 bg-[#f3fff7] relative overflow-hidden">
       {/* Background Blur */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#10B981]/5 rounded-full blur-[100px] pointer-events-none" />
 

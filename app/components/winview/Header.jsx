@@ -50,7 +50,6 @@ export default function Header() {
       >
         <nav className="w-full px-3 lg:px-6">
           <div className="flex items-center justify-between h-20 lg:h-28">
-            {/* Logo */}
             <div className="flex items-center gap-3 group">
               <a href="/" className="flex items-center gap-2 transition-all duration-300">
                 <div className="relative">
@@ -85,7 +84,6 @@ export default function Header() {
               </a>
             </div>
 
-            {/* Desktop Navigation */}
             <div
               className="hidden lg:flex items-center"
               style={{ fontFamily: iosText }}
@@ -126,13 +124,13 @@ export default function Header() {
                   >
                     <div className="p-2 text-black">
                       <a href="/open-account" className="block p-3 rounded-lg hover:bg-neutral-100">
-                        💳 Open Account
+                        Open Account
                       </a>
                       <a href="/savings" className="block p-3 rounded-lg hover:bg-neutral-100">
-                        💰 Savings Plans
+                        Savings Plans
                       </a>
                       <a href="/loans" className="block p-3 rounded-lg hover:bg-neutral-100">
-                        🏦 Micro Loans
+                        Micro Loans
                       </a>
                     </div>
                   </div>

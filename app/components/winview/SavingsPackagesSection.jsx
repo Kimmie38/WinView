@@ -37,7 +37,7 @@ export default function SavingsPackagesSection() {
   ];
 
   return (
-    <section className="py-24 px-6 bg-[#FFFBF5] relative overflow-hidden">
+    <section className="py-24 px-6 bg-[#f3fff7] relative overflow-hidden">
       {/* Ambient shapes for warmth */}
       <div className="absolute -top-16 -left-10 w-[520px] h-[520px] bg-gradient-to-br from-[#FFB86C]/10 to-[#FFD1A6]/10 blur-[90px] rounded-full pointer-events-none" />
       <div className="absolute -bottom-20 -right-10 w-[560px] h-[560px] bg-gradient-to-tr from-[#8A2BE2]/10 to-[#5AC8FA]/10 blur-[110px] rounded-full pointer-events-none" />

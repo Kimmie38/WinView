@@ -14,15 +14,12 @@ export function ApplicationRow({ application, visibleCols, onPrint }) {
     <div
       className={`grid md:grid-cols-[90px_1.5fr_${visibleCols.ippis ? '1fr' : '0px'}_${visibleCols.payPoint ? '1fr' : '0px'}_${visibleCols.automobile ? '1fr' : '0px'}_${visibleCols.monthlyRepayment ? '1fr' : '0px'}_160px] grid-cols-1 px-6 py-4 gap-3 items-center`}
     >
-      {/* ID + created */}
       <div className="flex items-center gap-2 text-[#1D1D1F]">
         <div className="w-7 h-7 rounded-lg bg-[#F5F5F7] flex items-center justify-center">
-          {/* DARKEN icon */}
           <Hash size={14} className="text-[#1D1D1F]" />
         </div>
         <div className="leading-tight">
           <div className="text-[14px] font-semibold">{application.id}</div>
-          {/* DARKEN timestamp */}
           <div className="text-[12px] text-[#1D1D1F]">{created}</div>
         </div>
       </div>

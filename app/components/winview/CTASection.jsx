@@ -2,7 +2,7 @@ import { ArrowRight } from 'lucide-react';
 
 export default function CTASection() {
   return (
-    <section className="py-32 px-6 bg-[#FFFBF5] overflow-hidden relative">
+    <section className="py-32 px-6 bg-[#e5faec] overflow-hidden relative">
       <div className="w-full mx-auto">
         <div className="relative bg-[#1D1D1F] rounded-[48px] p-12 md:p-24 text-center overflow-hidden shadow-2xl group">
           {/* Background Image */}
